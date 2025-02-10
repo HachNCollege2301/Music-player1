@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for songs, artists...">
+            </div>
+            <div class="header-right">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="profile-menu">
+                    <img src="Spiderman in the Rain Wallpaper HD 4K Background POSTER free download UltraHD for PC Desktop laptop and mobile.jpg" alt="Profile" class="profile-pic">
+                    <span class="username">Kartik Goyal</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="profile-dropdown">
+                        <a href="#" id="profile-link"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#" id="settings-link"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark Mode</a>
+                        <a href="#" id="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="menu-section">
+                        <h3>Menu</h3>
+                        <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+                        <a href="#" class="nav-item"><i class="fas fa-compass"></i> Discover</a>
+                        <a href="#" class="nav-item"><i class="fas fa-broadcast-tower"></i> Radio</a>
+                    </div>
+                    <div class="menu-section">
+                        <h3>Library</h3>
+                        <a href="#" class="nav-item"><i class="fas fa-album"></i> Albums</a>
+                        <a href="#" class="nav-item"><i class="fas fa-history"></i> Recent</a>
+                        <a href="#" class="nav-item"><i class="fas fa-heart"></i> Favorites</a>
+                        <a href="#" class="nav-item"><i class="fas fa-list"></i> Playlists</a>
+                    </div>
+                </nav>
+            </aside>
+
+            <div class="content-area">
+                <section class="featured-section">
+                    <h2>Featured Songs</h2>
+                    <div class="featured-grid">
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/400?random=1" alt="Featured 1">
+                            <h3>Summer Vibes</h3>
+                            <p>John Beat</p>
+                        </div>
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/400?random=2" alt="Featured 2">
+                            <h3>Chill Mode</h3>
+                            <p>Sarah Waves</p>
+                        </div>
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/400?random=3" alt="Featured 3">
+                            <h3>Deep Focus</h3>
+                            <p>Mind Groove</p>
+                        </div>
+                        <div class="featured-card">
+                            <img src="https://picsum.photos/400/400?random=4" alt="Featured 4">
+                            <h3>Jazz Coffee</h3>
+                            <p>Cool Quartet</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="music-player">
+                    <div class="current-track">
+                        <img src="https://picsum.photos/400/400?random=1" alt="Album Cover" class="current-track-cover">
+                        <div class="track-info">
+                            <span class="current-track-name">No track selected</span>
+                            <span class="current-track-artist">Unknown Artist</span>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="main-controls">
+                            <button id="shuffle" class="control-btn"><i class="fas fa-random"></i></button>
+                            <button id="prev" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                            <button id="play-pause" class="control-btn"><i class="fas fa-play"></i></button>
+                            <button id="next" class="control-btn"><i class="fas fa-step-forward"></i></button>
+                            <button id="repeat" class="control-btn"><i class="fas fa-redo"></i></button>
+                        </div>
+
+                        <div class="progress-container">
+                            <span class="current-time">0:00</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span class="duration">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="volume-controls">
+                        <i class="fas fa-volume-up volume-icon"></i>
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.7">
+                    </div>
+                </div>
+
+                <section class="playlist-section">
+                    <h2>Playlist</h2>
+                    <ul id="playlist-items" class="playlist"></ul>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
