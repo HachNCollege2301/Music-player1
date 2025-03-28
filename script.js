@@ -310,9 +310,9 @@ function showProfile() {
     profileSection.className = 'profile-section';
     profileSection.innerHTML = `
         <div class="profile-header">
-            <img src="https://i.imgur.com/RLnJJyQ.jpg" alt="Profile" class="large-profile-pic">
+            <img src="Spiderman in the Rain Wallpaper HD 4K Background POSTER free download UltraHD for PC Desktop laptop and mobile.jpg" alt="Profile" class="large-profile-pic">
             <div class="profile-info">
-                <h2>Kartik Goyal</h2>
+                <h2>HackNCollege</h2>
                 <p class="user-type"><i class="fas fa-crown"></i> Premium Member</p>
                 <div class="bio">Music enthusiast | Spider-Man fan | Web developer</div>
             </div>
